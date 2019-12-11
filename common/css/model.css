@@ -263,9 +263,8 @@
 
 /*5.首页产品与服务*/
 .productServive {
-    /* background-image: url(../../images/index-bg-03.png); */
     background:#3b5a8f;
-    border-radius: 50% 50% 0 0;
+    border-radius: 100px 100px 0 0;
 }
 
 .productServive .dialog-box-header img,
