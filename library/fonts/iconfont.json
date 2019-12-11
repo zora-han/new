@@ -1,0 +1,44 @@
+{
+  "id": "1548780",
+  "name": "new",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "578363",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "581205",
+      "name": "当前位置",
+      "font_class": "dizhi",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "587816",
+      "name": "email",
+      "font_class": "youxiang",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "6966956",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "6966961",
+      "name": "左箭头",
+      "font_class": "zuojiantou",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    }
+  ]
+}

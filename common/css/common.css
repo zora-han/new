@@ -1,0 +1,427 @@
+/*重构boostrap*/
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left span,
+.carousel-control.right span {
+    top: 40%;
+}
+
+.carousel-indicators li {
+    width: 13px;
+    height: 13px;
+}
+
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-caption {
+    width: 100%;
+    height: 100%;
+    left: 0 !important;
+    right: 0 !important;
+    display: inline-flex;
+}
+
+/*自定义公共样式*/
+/*1.所有标签样式*/
+@font-face {
+    font-family: 'fangzheng';
+    src: url(../../library/fonts/fangzheng.TTF);
+}
+
+@font-face {
+    font-family: 'lanting';
+    src: url(../../library/fonts/lanting.TTF);
+}
+
+@font-face {
+    font-family: 'lantingcu';
+    src: url(../../library/fonts/lantingcu.TTF);
+}
+
+@font-face {
+    font-family: 'lantingzhong';
+    src: url(../../library/fonts/lantingzhong.TTF);
+}
+
+* {
+    font-family: "lantingzhong";
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%
+}
+
+li {
+    list-style: none;
+}
+
+.my-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.background {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+.col-my-5 {
+    width: 20%;
+    float: left;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+/*2.颜色*/
+.text-yellow {
+    color: #FFDB4F;
+}
+
+/*3.banner样式*/
+.banner-content {
+    color: #ffffff;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.banner-title,
+.banner-subtitle {
+    font-family: "lantingcu";
+}
+
+.banner-left {
+    text-align: left;
+    margin-left: 15%;
+}
+
+.banner-right {
+    text-align: right;
+    margin-right: 15%;
+}
+
+.banner-middle {
+    margin: 0 auto;
+}
+
+/*4.dialog*/
+.dialog {
+    padding: 150px 0;
+}
+
+.dialog li:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.dialog-header {
+    color: #ffffff;
+    text-align: center;
+}
+
+.dialog-title {
+    font-size: 48px;
+    font-family: "lantingcu";
+}
+
+.dialog-con {
+    font-size: 24px;
+    font-family: "lantingzhong";
+}
+
+.dialog-list {
+    margin: 100px 10px;
+
+}
+
+.dialog-box {
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 5px;
+    padding: 45px;
+    height: 480px;
+    box-shadow: 0 0 15px 5px rgba(202, 203, 204, 0.3);
+    margin: 10px 0;
+    color: #3B537C;
+}
+
+.dialog-box-header {
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    padding: 10px;
+    border-bottom: 1px solid #0B0E10;
+}
+
+.dialog-box-header img {
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.dialog-box-title {
+    font-size: 30px;
+}
+
+.dialog-box-subtitle {
+    font-size: 20px;
+}
+
+.dialog-box-content {
+    font-size: 20px;
+    padding-top: 35px;
+    line-height: 1.5;
+}
+
+/*产品页*/
+.block {
+    position: relative;
+}
+
+.block .dialog {
+    padding: 0;
+}
+
+.block .dialog-box {
+    padding: 30px;
+}
+
+.block>img {
+    width: 100%;
+}
+
+.product-middle,
+.service-middle {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.product-abstract {
+    text-align: left;
+    text-indent: 37px;
+    margin: 30px 90px 0;
+    padding: 25px 50px;
+    font-size: 20px;
+    font-family: "lanting";
+    line-height: 2;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom left, #44AECC, #205FBC);
+}
+
+.product-abstract1 {
+    text-align: left;
+    text-indent: 37px;
+    margin: 13px 90px 0;
+    padding: 45px 0 40px;
+    font-size: 20px;
+    font-family: "lantingcu";
+    line-height: 2;
+    color: #5E5E5E;
+}
+
+.product-abstract2 {
+    text-align: left;
+    text-indent: 37px;
+    margin-left: 80px;
+    padding: 0 50px;
+    font-size: 20px;
+    font-family: "lantingcu";
+    line-height: 2;
+    color: #5E5E5E;
+    width: 66%;
+    margin-bottom: 50px;
+}
+
+.product-image {
+    margin: 0 90px;
+    display: block;
+    box-shadow: 25px 25px 15px 0px rgba(202, 203, 204, 0.3)
+}
+
+.product-image img {
+    width: 100%;
+}
+
+.product-02 .dialog-header {
+    width: 450px;
+    background-image: linear-gradient(to right, #EA2C32, #0F5093);
+    margin: 0 auto 100px;
+    padding: 25px 32px;
+    border-radius: 500px;
+}
+
+.product-02 .dialog-box {
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+    height: 300px;
+}
+
+.product-02 .dialog-box-header {
+    border: none;
+}
+
+.product-02 .dialog-box-header img{
+    background-color: #fff;
+    width: 164px;
+    border-radius: 50%;
+}
+
+.product-02 .dialog-box-content {
+    padding: 0px;
+}
+
+.product-02 .dialog-list {
+    margin: 0;
+}
+
+.product-03 .dialog {
+    padding: 0 0 32px;
+}
+
+.product-03 .dialog-list {
+    margin-bottom: 0;
+}
+
+.service-box{
+    padding: 0 0 199px;
+}
+
+.sercive-header {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.service-image {
+    padding: 0 15%;
+}
+
+.service-image img {
+    width: 100%;
+}
+
+.service-title {
+    font-size: 35px;
+    font-family: 'lantingcu';
+    margin-top: 10px;
+    color: #333;
+}
+
+.service-subtitle {
+    font-size: 22px;
+    font-family: 'lanting';
+    color: #0077ff;
+}
+
+.service-content {
+    font-size: 18px;
+    padding: 0 35%;
+    line-height: 1.5;
+}
+
+/*媒体查询*/
+@media screen and (max-width: 768px) {
+
+    /*40%*/
+    .banner-title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .banner-subtitle.text-yellow {
+        display: none;
+    }
+
+    .banner-subtitle {
+        font-size: 29px;
+    }
+
+    .banner-text {
+        font-size: 12px;
+    }
+
+    .banner-left {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /*50%*/
+    .banner-title {
+        font-size: 60px;
+    }
+
+    .banner-subtitle {
+        font-size: 36px;
+    }
+
+    .banner-text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /*75%*/
+    .banner-title {
+        font-size: 90px;
+    }
+
+    .banner-subtitle {
+        font-size: 54px;
+    }
+
+    .banner-text {
+        font-size: 22px;
+    }
+
+    .product-02 .dialog-header {
+        width: 700px;
+        padding: 25px 100px;
+    }
+
+    .product-02 .dialog-box {
+        height: 470px;
+    }
+    .dialog-box-header img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .banner-title {
+        font-size: 120px;
+    }
+
+    .banner-subtitle {
+        font-size: 72px;
+    }
+
+    .banner-text {
+        font-size: 30px;
+    }
+
+    .service-image {
+        padding: 40px 19%;
+    }
+
+    .service-content {
+        font-size: 18px;
+        padding: 0px 30%;
+    }
+}

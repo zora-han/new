@@ -1,0 +1,763 @@
+/*1.顶层菜单栏*/
+.header-navbar,
+.header-navbar.scrolled {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.header-navbar .logo {
+    margin: 10px 0 0;
+    width: 130px;
+    height: 35px;
+    background-size: 60%;
+    display: inline-block;
+    background-image: url(../../images/logo_header.png);
+
+}
+
+.header-navbar.scrolled .logo {
+    background-image: url(../../images/logo_header.png);
+}
+
+.header-navbar .nav {
+    margin-right: 15px;
+}
+
+.header-navbar .nav>li>a {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    margin-left: 35px;
+}
+
+.header-navbar .nav>li>a:hover,
+.header-navbar .nav>li>a:focus,
+.header-navbar .nav>li>a.active,
+.header-navbar .nav .open>a,
+.nav .open>a:hover,
+.header-navbar .nav .open>a:focus {
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff;
+}
+
+.header-navbar ul.in {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(255, 255, 255, .9);
+    z-index: -1;
+    margin: 0;
+    padding-top: 71px;
+    max-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+    transition: .5s;
+}
+
+.header-navbar ul.in li {
+    height: auto;
+    width: 85%;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1.1em;
+    float: none;
+}
+
+.header-navbar ul.in>li {
+    width: 50%;
+}
+
+.header-navbar ul.in li a {
+    color: #181818;
+    font-weight: normal;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.header-navbar ul.in img,.header-navbar ul.in .down {
+    display: none;
+}
+
+.header-navbar ul.in .dropdown-menu {
+    margin-left: 35px;
+}
+
+.header-navbar ul.in li.open>a,
+.header-navbar ul.in li.open>a:hover,
+.header-navbar ul.in li.open>a:focus,
+.header-navbar ul.in li a:hover,
+.header-navbar ul.in li a:focus,
+.header-navbar ul.in li a.active {
+    color: #379ee4;
+}
+
+.oi {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 12px;
+    top: 3px;
+}
+
+.oi em {
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 3px;
+    z-index: 10;
+    right: auto;
+    bottom: auto;
+    position: absolute;
+    display: inline-block;
+    background-color: #353535;
+    transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+.oi em::before,
+.oi em:after,
+.oi em::before,
+.oi em:after {
+    top: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #353535;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transition: transform .3s;
+    -moz-transition: -moz-transform .3s;
+    -webkit-transition: -webkit-transform .3s;
+}
+
+
+.oi em::before {
+    transform: translateY(-6px) rotate(0deg);
+    -o-transform: translateY(-6px) rotate(0deg);
+    -ms-transform: translateY(-6px) rotate(0deg);
+    -moz-transform: translateY(-6px) rotate(0deg);
+    -webkit-transform: translateY(-6px) rotate(0deg);
+}
+
+.oi em::after {
+    transform: translateY(6px) rotate(0deg);
+    -o-transform: translateY(6px) rotate(0deg);
+    -ms-transform: translateY(6px) rotate(0deg);
+    -moz-transform: translateY(6px) rotate(0deg);
+    -webkit-transform: translateY(6px) rotate(0deg);
+}
+
+.io em {
+    background: rgba(53, 53, 53, 0);
+}
+
+.io em::before {
+    transform: translateY(0px) rotate(45deg);
+    -o-transform: translateY(0px) rotate(45deg);
+    -ms-transform: translateY(0px) rotate(45deg);
+    -moz-transform: translateY(0px) rotate(45deg);
+    -webkit-transform: translateY(0px) rotate(45deg);
+}
+
+.io em::after {
+    transform: translateY(0px) rotate(-45deg);
+    -o-transform: translateY(0px) rotate(-45deg);
+    -ms-transform: translateY(0px) rotate(-45deg);
+    -moz-transform: translateY(0px) rotate(-45deg);
+    -webkit-transform: translateY(0px) rotate(-45deg);
+}
+
+.carousel,.block img{
+    margin-top: 71px;
+}
+/*2.首页圆盘左边文字*/
+.insightCloud {
+    background-image: none;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: 50%;
+}
+
+.insightCloud .left-box h2,
+.insightCloud .left-box li {
+    font-family: "Microsoft YaHei";
+    font-weight: 600;
+}
+
+.insightCloud .left-box h2 {
+    font-size: 43px;
+    margin: 40px 0 20px;
+}
+
+.insightCloud .left-box li {
+    font-size: 17px;
+    line-height: 2;
+}
+
+/*3.首页核心技术*/
+.technology {
+    background-image: linear-gradient(to bottom, #3f5c82, #7cdedc);
+    padding-bottom: 80px;
+    border-radius: 100%/250px;
+    position: relative;
+}
+.technology:after {
+    background-image: url(../../images/index-bg-02.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 395px;
+    content: '';
+    position: absolute;
+    bottom: 120px;
+    opacity: 0.5;
+}
+
+/*4.首页核心能力*/
+.ability .dialog-header {
+    color: #1B1B1B;
+    border-bottom: none;
+}
+
+.ability .dialog-box {
+    background: transparent;
+    box-shadow: none;
+    padding:20px;
+    height: 400px;
+}
+
+.ability .dialog-box img{
+    width: 164px;
+}
+
+.ability .dialog-box-header {
+    border-bottom: none;
+}
+
+.ability .dialog-box-title {
+    font-size: 24px;
+}
+
+.ability .dialog-box-content {
+    padding-top: 0;
+    text-align: center;
+}
+
+.ability .font-con {
+    font-size: 18px;
+}
+
+.ability .font-subcon {
+    font-size: 14px;
+}
+
+/*5.首页产品与服务*/
+.productServive {
+    /* background-image: url(../../images/index-bg-03.png); */
+    background:#3b5a8f;
+    border-radius: 50% 50% 0 0;
+}
+
+.productServive .dialog-box-header img,
+.service-02 .dialog-box-header img,
+.search-01 .dialog-box-header img {
+    width: 80px;
+    height: 80px
+}
+
+.productServive .dialog-box {
+    height: 600px;
+}
+
+.productServive .dialog-box-content {
+    min-height: 220px;
+}
+
+.productServive .more {
+    background-color: #125488;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.productServive .more:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*6.页底*/
+.information {
+    background-color: #242B2E;
+    line-height: 2;
+}
+
+.company {
+    padding-top: 20px;
+}
+
+.company:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.company>li {
+    float: left;
+    list-style: none;
+}
+
+.company>li:not(:first-child) {
+    margin-left: 60px;
+}
+
+.company>li .logo {
+    display: block;
+    width: 200px;
+    margin-top: 40px;
+}
+
+.company-header {
+    color: #83959F;
+    font-family: "lanting";
+    font-size: 20px;
+}
+
+.company-con {
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "lanting";
+}
+
+.company-con .icon{
+    margin-right: 5px;
+}
+
+a.company-con {
+    cursor: pointer;
+}
+
+a.company-con:hover {
+    color: #83959F;
+}
+
+.footer {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 0 10px;
+    font-family: "lanting";
+}
+
+
+
+/*回到顶部*/
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* image replacement properties */
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+    border-radius: 4px;
+    color: #5e5e5e;
+}
+
+.cd-top.cd-is-visible,
+.cd-top.cd-fade-out,
+.no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 999;
+}
+
+
+
+.about .banner-content {
+    margin-top: 120px;
+}
+
+.about .banner-connect {
+    margin-top: 90px;
+}
+
+.connect {
+    border-radius: 20px;
+    background: #FFFFFF;
+    height: 290px;
+    width: 95%;
+    margin: 0 auto 65px;
+    padding: 30px;
+    font-weight: 500;
+    text-align: left;
+    text-shadow: none;
+}
+
+.connect img {
+    width: 100%;
+}
+
+.connect-title {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #626262;
+    font-family: 'Microsoft YaHei';
+}
+
+.connect-content {
+    font-size: 20px;
+    color: #626262;
+    font-family: 'Microsoft YaHei';
+}
+
+.connect-content i {
+    margin-right: 10px;
+}
+
+.tvm-01 {
+    background-image: url(../../images/TVMbg01.jpg);
+}
+
+.tvm-02,.atp-02 {
+    background-color: #f4f6fb;
+    position: relative;
+}
+
+.tvm-02:before,.atp-02:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #f4f6fb;
+    border-left: 20px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    margin-top: -20px;
+}
+
+.tvm-02:after,.atp-02:after {
+    content: '';
+    width: 130px;
+    height: 194px;
+    position: absolute;
+    right: 0;
+    top: 250px;
+    display: none;
+    background-image: url(../../images/middle01.png);
+}
+
+.atp-02:after{
+    width: 125px;
+    background-image: url(../../images/middle02.png);
+}
+
+.tvm-03,.atp-03 {
+    background-image: linear-gradient(to right, #45b2cd, #276ebf);
+    position: relative;
+}
+
+.tvm-03:before,.atp-03:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #3287c4;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    margin-top: -20px;
+}
+
+
+.pts-01 {
+    background-image: url(../../images/PTSbg01.jpg);
+}
+
+.pts-01 .product-abstract {
+    background: #808080;
+}
+
+.pts-02 {
+    background-image: url(../../images/PTSbg02.jpg);
+}
+
+.pts-03 {
+    background-image: url(../../images/PTSbg03.jpg);
+}
+
+.atp-01 {
+    background-image: url(../../images/ATPbg01.jpg);
+}
+
+/* .atp-02 {
+    background-image: url(../../images/ATPbg02.jpg);
+} */
+
+.atp-02 .dialog {
+    padding: 151px 0;
+}
+
+/* .atp-03 {
+    background-image: url(../../images/ATPbg03.jpg);
+} */
+
+.service-01 {
+    background-image: url(../../images/SERVICEbg01.jpg);
+}
+
+.service-02 {
+    background-image: url(../../images/SERVICEbg02.jpg);
+}
+
+.service-02 .sercive-header {
+    padding-top: 110px;
+}
+
+.service-02 .dialog,
+.search-01 .dialog {
+    padding-bottom: 0;
+}
+
+.service-02 .dialog-list {
+    margin: 78px 10px 0;
+}
+
+.service-03 {
+    background-image: url(../../images/SERVICEbg03.jpg);
+}
+
+.service-03 .sercive-header {
+    padding-top: 110px;
+}
+
+.service-03 .con li {
+    color: #7f7f7f;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 15px;
+}
+
+.service-03 .con ul {
+    margin-left: 18px;
+}
+
+.service-03 .dialog li:hover {
+    transform: translateY(0);
+    cursor: inherit;
+}
+
+.search-01 {
+    background-image: url(../../images/SEARCHbg01.jpg);
+}
+
+.search-01 .dialog {
+    padding-top: 100px;
+}
+
+.intro-01 {
+    background-image: url(../../images/INTRObg01.jpg);
+    position: relative;
+    padding-top: 400px;
+}
+
+.intro-01 .intro-dialog {
+    position: absolute;
+    right: 110px;
+    top: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    width: 565px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'lantingzhong'
+}
+
+.intro-text {
+    position: absolute;
+    bottom: 130px;
+    width: 100%;
+    font-family: 'lanting';
+    font-size: 18px;
+    left: 40px;
+    line-height: 1.5;
+}
+
+.intro-image {
+    text-align: right;
+}
+
+.intro-image image {
+    width: 100%;
+}
+
+.about-01 {
+    background-image: url(../../images/CONNECTbg01.jpg);
+}
+
+/*媒体查询*/
+@media screen and (min-width: 768px) {
+    .header-navbar .logo {
+        background-size: 80%;
+        height: 45px;
+    }
+
+    .header-navbar {
+        border-bottom: none;
+        background-color: transparent;
+    }
+
+    .header-navbar .logo {
+        background-image: url(../../images/logo_white.png);
+    }
+
+    .header-navbar.scrolled .nav>li>a {
+        color: #666666;
+    }
+
+    .header-navbar.scrolled .nav>li>a:hover,
+    .header-navbar.scrolled .nav>li>a.active {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.68);
+    }
+
+    .cd-top {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .carousel, .block img{
+        margin-top:0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-navbar .logo {
+        background-size: 90%;
+    }
+
+    .header-navbar .nav>li>a {
+        margin-left: 50px;
+    }
+
+    .navbar-nav>li>.dropdown-menu {
+        border: 4px;
+        padding: 0;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        margin-top: 20px;
+    }
+
+    .dropdown-menu>li {
+        width: 410px;
+        border-bottom: 1px solid #eaeaea;
+        position: relative;
+    }
+
+    .dropdown-menu>li>a {
+        overflow: hidden;
+        padding: 30px 20px;
+        border-left: 8px solid #fff;
+        white-space: normal;
+        position: relative;
+    }
+
+    .dropdown-menu>li>a:hover,
+    .dropdown-menu>li>a:focus {
+        border-left: 8px solid #ffa30a;
+        background-color: #f9f9f9;
+    }
+
+    .dropdown-menu>li>a .pic {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+        width: 60px;
+        z-index: 2;
+    }
+
+    .dropdown-menu>li>a .con {
+        padding-left: 100px;
+    }
+
+    .navbar-nav>li>.dropdown-menu .menu-arrow {
+        position: absolute;
+        top: -12px;
+        right: 20px;
+    }
+
+    .dropdown-menu.small-menu>li {
+        width: 160px;
+    }
+
+    .dropdown-menu.small-menu>li>a .con {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .dropdown-menu.small-menu>li>a {
+        padding: 20px 20px
+    }
+
+    .cd-top {
+        height: 42px;
+        width: 42px;
+        right: 30px;
+        bottom: 30px;
+    }
+
+    .intro-text {
+        width: 50%;
+    }
+
+    .tvm-02:after,.atp-02:after{
+        display: block;
+    }
+
+    
+    .insightCloud {
+        background-image: url(../../images/index-bg-01.png);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-navbar .logo {
+        background-size: 100%;
+    }
+}

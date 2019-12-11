@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="description"
+        content="北京华云安信息技术有限公司目前具有态势感知、漏洞管理、自动化渗透、互联网反溯源等产品，同时拥有及专业的网络安全攻防团队，主要服务于国家监管机构及运营商、能源、教育等重要行业客户。" />
+    <meta name="keywords"
+        content="华云安,网络安全,攻防对抗,威胁情报,反制,防御,漏洞,知识图谱,人工智能,AI,可解释人工智能,XAI,以攻促防,自适应,关键基础设施,安全能力,资产测绘,自动化渗透,威胁建模,漏洞管理,TVM,APT,PTS,态势感知,SOC,SEIM,Exp,Poc,红对服务,反溯源,漏洞挖掘,漏洞利用,红蓝对抗,威胁治理,应急响应,自动化,能力平台,重保,网络安保,护网" />
+    <title>安全研究</title>
+    <link rel="shortcut icon" href="images/huaun_favicon.png" />
+    <link rel="stylesheet" href="library/css/boostrap.css">
+    <link rel="stylesheet" href="library/fonts/iconfont.css">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="common/css/model.css">
+</head>
+
+<body>
+    <!-- menu -->
+    <div id='menu'></div>
+    <!-- banner -->
+    <div class='block'>
+        <img src="images/SEARCHbg.jpg" alt="">
+        <div class='banner'>
+            <div class="carousel-caption">
+                <div class='banner-content banner-left'
+                    data-scroll-reveal="enter bottom over 0.5s and move 100px after 0.3s">
+                    <p class='banner-title'>安全研究</p>
+                    <p class='banner-text'>为了应对新时期网络空间的安全风险与挑战</p>
+                    <p class='banner-text'>专注国内外前沿技术研究、攻关、验证和应用落地</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='background search-01'>
+        <div class="dialog my-container">
+            <!--标题-->
+            <div class='dialog-header' data-scroll-reveal="enter bottom over 0.5s and move 100px after 0.3s">
+                <p class='dialog-con'>基于AI的深度专项安全分析</p>
+                <p class='dialog-con'>In depth special safety analysis based on AI</p>
+            </div>
+            <!--列表-->
+            <ul class="row dialog-list">
+                <li class="col-xs-12 col-md-4">
+                    <div class="dialog-box" data-scroll-reveal="enter bottom over 0.5s and move 100px after 0.3s">
+                        <div class='dialog-box-header'>
+                            <img src="images/search-01.png" alt="">
+                            <p class='dialog-box-title'>AI研究</p>
+                        </div>
+                        <div class='dialog-box-content'>
+                            <p class="font-con">
+                                研究内容包括基于大数据分析的高效威胁识别、基于深度学习的精准关联分析、基于自主优化的快速应急响应、基于进化赋能的广域治理等。同时在AI基础之上引入XAI，通过XAI建立可信任安全智能，是实现安全智能大规模应用落得的必由之路。
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-md-4">
+                    <div class="dialog-box" data-scroll-reveal="enter bottom over 0.5s and move 100px after 0.3s">
+                        <div class='dialog-box-header'>
+                            <img src="images/search-02.png" alt="">
+                            <p class='dialog-box-title'>IoT研究</p>
+                        </div>
+                        <div class='dialog-box-content'>
+                            <p class="font-con">
+                                随着“5G时代”的到来，标志着万物互联即将成为现实。为应对物联网安全威胁，该项研究范围涵盖工业物联网、车载物联网、智能家居物联网等领域。
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-md-4">
+                    <div class="dialog-box" data-scroll-reveal="enter bottom over 0.5s and move 100px after 0.3s">
+                        <div class='dialog-box-header'>
+                            <img src="images/search-03.png" alt="">
+                            <p class='dialog-box-title'>攻防研究</p>
+                        </div>
+                        <div class='dialog-box-content'>
+                            <p class="font-con">
+                                网络安全的本质是攻防对抗。通过对前沿攻防对抗的研究，不断将成果应用于安全系统、威胁情报和解决方案中，推动安全研究技术转化。
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a href="#0" class="cd-top">
+        <img src="images/cd-top-arrow.svg">
+    </a>
+    <!-- footer -->
+    <div id='footer' class='information'></div>
+</body>
+<script src="library/javascript/jquery.min.js"></script>
+<script src="library/javascript/bootstrap.min.js"></script>
+<script src="library/javascript/scrollReveal.js"></script>
+<script src='library/javascript/goTop.js'></script>
+<script src="common/js/scroll.js"></script>
+<script>
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+        (function () {
+            window.scrollReveal = new scrollReveal({
+                reset: true
+            });
+        })();
+    };
+    $('#menu').load('common/html/header.html', function () {
+        $('#research').addClass('active').parent().siblings().children('a').removeClass('active');
+    });
+</script>
+
+</html>
