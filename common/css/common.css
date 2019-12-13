@@ -4,11 +4,6 @@
     background-image: none;
 }
 
-.carousel-control.left span,
-.carousel-control.right span {
-    top: 40%;
-}
-
 .carousel-indicators li {
     width: 13px;
     height: 13px;
@@ -336,7 +331,6 @@ a:focus {
     /*40%*/
     .banner-title {
         font-size: 20px;
-        line-height: 48px;
     }
 
     .banner-subtitle.text-yellow {
