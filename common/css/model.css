@@ -1,9 +1,5 @@
 .technology:before,
-.productServive:before,
-.tvm-02:before,
-.atp-02:before,
-.tvm-03:before,
-.atp-03:before {
+.productServive:before {
     content: '';
     width: 0;
     height: 0;
@@ -24,10 +20,9 @@
 }
 
 .header-navbar .logo {
-    margin: 10px 0 0;
     width: 130px;
     height: 35px;
-    background-size: 60%;
+    background-size: 75%;
     display: inline-block;
     background-image: url(../../images/logo_header.png);
 
@@ -65,7 +60,7 @@
     background: rgba(255, 255, 255, .9);
     z-index: -1;
     margin: 0;
-    padding-top: 71px;
+    padding-top: 61px;
     max-height: 100vh;
     height: 100vh;
     overflow: hidden;
@@ -199,7 +194,7 @@
 
 .carousel,
 .block img {
-    margin-top: 71px;
+    margin-top: 61px;
 }
 
 /*2.首页圆盘左边文字*/
@@ -303,11 +298,6 @@
 .search-01 .dialog-box-header img {
     width: 80px;
     height: 80px
-}
-
-.productServive .dialog-box-content {
-    min-height: 145px;
-    padding: 20px;
 }
 
 .productServive .more {
@@ -434,26 +424,42 @@ a.company-con:hover {
     z-index: 999;
 }
 
-
-
-.about .banner-content {
-    margin-top: 120px;
+.connect-header{
+    margin:25px 0;
+    text-align: center;
 }
 
-.about .banner-connect {
-    margin-top: 90px;
+.connect-header-en{
+    font-size: 24px;
+}
+
+.connect-header-ch{
+    font-size: 19px;
+    border-top:5px solid #64b2f6;
+    display: inline-block;
+}
+
+.connect-img{
+    padding:40px;
+    text-align: center;
+}
+.connect-img img{
+    width:80%;
 }
 
 .connect {
     border-radius: 20px;
     background: #FFFFFF;
-    height: 290px;
+    height: 230px;
     width: 95%;
     margin: 0 auto 65px;
     padding: 30px;
     font-weight: 500;
     text-align: left;
     text-shadow: none;
+    color: #626262;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .connect img {
@@ -461,43 +467,21 @@ a.company-con:hover {
 }
 
 .connect-title {
-    font-size: 30px;
-    margin-bottom: 35px;
-    color: #626262;
-    font-family: 'Microsoft YaHei';
-}
-
-.connect-content {
     font-size: 20px;
-    color: #626262;
-    font-family: 'Microsoft YaHei';
+    margin-bottom: 30px;
 }
 
 .connect-content i {
     margin-right: 10px;
 }
 
-.tvm-02,
-.atp-02 {
-    background-color: #f4f6fb;
-    position: relative;
+.connect-con{
+    font-size: 16px;
+    line-height: 2;
 }
 
-.tvm-02:before,
-.atp-02:before {
-    border-bottom: 20px solid #f4f6fb;
-}
-
-.tvm-02:after,
-.atp-02:after {
-    content: '';
-    width: 130px;
-    height: 194px;
-    position: absolute;
-    right: 0;
-    top: 250px;
-    display: none;
-    background-image: url(../../images/middle01.png);
+.connect-con div{
+    margin-top: 40px;
 }
 
 .atp-02:after {
@@ -505,66 +489,37 @@ a.company-con:hover {
     background-image: url(../../images/middle02.png);
 }
 
-.tvm-03,
-.atp-03 {
-    background-image: linear-gradient(to right, #45b2cd, #276ebf);
-    position: relative;
+.service-banner .banner-content{
+    color:#222222;
 }
 
-.tvm-03:before,
-.atp-03:before {
-    border-bottom: 20px solid #3287c4;
+.pts-02:after {
+    left: 0;
+    background-image: url(../../images/middle03.png);
+    width: 145px;
+    height: 161px;
 }
 
-
-.pts-01 {
-    background-image: url(../../images/PTSbg01.jpg);
-}
-
-.pts-01 .product-abstract {
-    background: #808080;
-}
-
-.pts-02 {
-    background-image: url(../../images/PTSbg02.jpg);
-}
-
-.pts-03 {
-    background-image: url(../../images/PTSbg03.jpg);
-}
-
-.service-01 {
-    background-image: url(../../images/SERVICEbg01.jpg);
-}
-
-.service-02 {
-    background-image: url(../../images/SERVICEbg02.jpg);
-}
-
-.service-02 .sercive-header {
-    padding-top: 110px;
-}
-
-.service-02 .dialog,
-.search-01 .dialog {
-    padding-bottom: 0;
+.service-02 .dialog,.service-03 .dialog,.search-01 .dialog{
+    padding-top: 65px;
 }
 
 .service-02 .dialog-list {
-    margin: 78px 10px 0;
+    margin: 85px 0;
 }
 
-.service-03 {
-    background-image: url(../../images/SERVICEbg03.jpg);
+.service-03 .service-header {
+    color: #ffffff;
+    padding-bottom: 85px;
 }
 
-.service-03 .sercive-header {
-    padding-top: 110px;
+.service-03 .service-title,.service-03 .service-subtitle {
+    color: #ffffff;
 }
 
 .service-03 .con li {
-    color: #7f7f7f;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 16px;
     line-height: 32px;
     margin-top: 15px;
 }
@@ -578,12 +533,12 @@ a.company-con:hover {
     cursor: inherit;
 }
 
-.search-01 {
-    background-image: url(../../images/SEARCHbg01.jpg);
+.search-01 .dialog-list{
+    margin:75px 0;
 }
 
-.search-01 .dialog {
-    padding-top: 100px;
+.search-01 .dialog{
+    padding-bottom: 45px;
 }
 
 .intro-01 {
@@ -622,10 +577,6 @@ a.company-con:hover {
 
 .intro-image image {
     width: 100%;
-}
-
-.about-01 {
-    background-image: url(../../images/CONNECTbg01.jpg);
 }
 
 /*媒体查询*/
@@ -771,18 +722,24 @@ a.company-con:hover {
         width: 50%;
     }
 
-    .tvm-02:after,
-    .atp-02:after {
-        display: block;
-    }
-
-
     .insightCloud {
         background-image: url(../../images/index-bg-01.png);
     }
 
     .col-5 {
         width: 50%
+    }
+
+    .connect-img img{
+        width:100%;
+    }
+
+    .connect-header-en{
+        font-size: 30px;
+    }
+    
+    .connect-header-ch{
+        font-size: 24px;
     }
 }
 

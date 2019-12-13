@@ -22,7 +22,54 @@
     display: inline-flex;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -72,9 +119,7 @@ li {
 }
 
 .background {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding: 20px 0;
+    padding: 45px 0;
 }
 
 .col-my-5 {
@@ -97,6 +142,13 @@ a:focus {
     color: #ffffff;
     align-self: center;
     margin: 0 auto;
+}
+
+.banner-title,
+.banner-subtitle,
+.banner-text {
+    margin-bottom: 0;
+    line-height: 1.5;
 }
 
 .banner-title,
@@ -184,6 +236,11 @@ a:focus {
     line-height: 1.5;
 }
 
+.dialog-box-content1 {
+    min-height: 145px;
+    padding: 20px;
+}
+
 /*产品页*/
 .block {
     position: relative;
@@ -201,8 +258,8 @@ a:focus {
     width: 100%;
 }
 
-.block .carousel-caption{
-    padding-top: 71px;
+.block .carousel-caption {
+    padding-top: 81px;
 }
 
 .product-middle,
@@ -220,7 +277,7 @@ a:focus {
     font-family: 'Microsoft YaHei';
     line-height: 2;
     color: #ffffff;
-    background-image: linear-gradient(to bottom left, #44AECC, #205FBC); 
+    background-image: linear-gradient(to bottom left, #44AECC, #205FBC);
     border-radius: 10px 10px 0 0;
     margin: 0;
 }
@@ -231,21 +288,12 @@ a:focus {
 }
 
 .product-abstract2 {
-    text-align: left;
-    text-indent: 37px;
-    margin-left: 80px;
-    padding: 0 50px;
-    font-size: 20px;
-    font-family: "lantingcu";
-    line-height: 2;
-    color: #5E5E5E;
-    width: 66%;
-    margin-bottom: 50px;
+    background: #808080;
 }
 
 .product-image {
-    padding:5px;
-    background-color:#f4f6fb;
+    padding: 5px;
+    background-color: #f4f6fb;
     border-radius: 0 0 10px 10px;
 }
 
@@ -253,10 +301,47 @@ a:focus {
     width: 100%;
 }
 
+.product-02:before,
+.product-03:before,
+.service-02:before,
+.service-03:before,
+.about-02:before,
+.search-01:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #f4f6fb;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 0%;
+    margin-top: -20px;
+}
+
+.product-02,
+.service-02,
+.about-02,
+.search-01 {
+    background-color: #f4f6fb;
+    position: relative;
+}
+
+.product-02:after {
+    content: '';
+    width: 130px;
+    height: 194px;
+    position: absolute;
+    right: 0;
+    top: 250px;
+    display: none;
+    background-image: url(../../images/middle01.png);
+}
+
 .product-02 .dialog-header {
     padding: 25px 32px;
     text-align: center;
-    color:#1b1b1b;
+    color: #1b1b1b;
 }
 
 .product-02 .dialog-box {
@@ -270,7 +355,7 @@ a:focus {
     border: none;
 }
 
-.product-02 .dialog-box-header img{
+.product-02 .dialog-box-header img {
     background-color: #fff;
     width: 164px;
     border-radius: 50%;
@@ -284,22 +369,32 @@ a:focus {
     margin: 55px 0 60px;
 }
 
+.product-03,
+.service-03 {
+    background-image: linear-gradient(to right, #45b2cd, #276ebf);
+    position: relative;
+}
+
+.product-03 .dialog-box-content {
+    padding-top: 0px;
+}
+
+.product-03:before,
+.service-03:before {
+    border-bottom: 20px solid #3287c4;
+}
+
 .product-03 .dialog-list {
     margin-bottom: 0;
 }
 
-.service-box{
-    padding: 0 0 199px;
+.service-box {
+    padding: 100px;
 }
 
-.sercive-header {
-    margin-top: 20px;
+.service-header {
     text-align: center;
-    padding-top: 40px;
-}
-
-.service-image {
-    padding: 0 15%;
+    padding-top: 50px;
 }
 
 .service-image img {
@@ -307,21 +402,19 @@ a:focus {
 }
 
 .service-title {
-    font-size: 35px;
-    font-family: 'lantingcu';
+    font-size: 24px;
     margin-top: 10px;
     color: #333;
+    margin: 10px 0 0;
 }
 
 .service-subtitle {
-    font-size: 22px;
-    font-family: 'lanting';
+    font-size: 16px;
     color: #0077ff;
 }
 
 .service-content {
     font-size: 18px;
-    padding: 0 35%;
     line-height: 1.5;
 }
 
@@ -342,7 +435,7 @@ a:focus {
     }
 
     .banner-text {
-        font-size: 7px;
+        font-size: 8px;
     }
 
     .banner-left {
@@ -350,9 +443,29 @@ a:focus {
         margin: 0 auto;
     }
 
-    .my-container{
+    .my-container {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .product-02:before,
+    .product-03:before,
+    .service-02:before,
+    .service-03:before,
+    .about-02:before,
+    .search-01:before {
+        border-bottom: 10px solid #f4f6fb;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        position: absolute;
+        left: calc(50% - 5px);
+        top: 0%;
+        margin-top: -10px;
+    }
+
+    .product-03:before,
+    .service-03:before {
+        border-bottom: 10px solid #3287c4;
     }
 }
 
@@ -371,8 +484,8 @@ a:focus {
         font-size: 9px;
     }
 
-    
-    .block .carousel-caption{
+
+    .block .carousel-caption {
         padding-top: 0;
     }
 }
@@ -395,6 +508,11 @@ a:focus {
     .dialog-box-header img {
         width: 100%;
     }
+
+    .product-02:after {
+        display: block;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -408,14 +526,5 @@ a:focus {
 
     .banner-text {
         font-size: 18px;
-    }
-
-    .service-image {
-        padding: 40px 19%;
-    }
-
-    .service-content {
-        font-size: 18px;
-        padding: 0px 30%;
     }
 }
