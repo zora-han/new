@@ -1,3 +1,21 @@
+.technology:before,
+.productServive:before,
+.tvm-02:before,
+.atp-02:before,
+.tvm-03:before,
+.atp-03:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #3f5c82;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    margin-top: -20px;
+}
+
 /*1.顶层菜单栏*/
 .header-navbar,
 .header-navbar.scrolled {
@@ -75,7 +93,8 @@
     border-bottom: 1px solid #d6d6d6;
 }
 
-.header-navbar ul.in img,.header-navbar ul.in .down {
+.header-navbar ul.in img,
+.header-navbar ul.in .down {
     display: none;
 }
 
@@ -178,9 +197,11 @@
     -webkit-transform: translateY(0px) rotate(-45deg);
 }
 
-.carousel,.block img{
+.carousel,
+.block img {
     margin-top: 71px;
 }
+
 /*2.首页圆盘左边文字*/
 .insightCloud {
     background-image: none;
@@ -196,12 +217,12 @@
 }
 
 .insightCloud .left-box h2 {
-    font-size: 43px;
+    font-size: 24px;
     margin: 40px 0 20px;
 }
 
 .insightCloud .left-box li {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 2;
 }
 
@@ -209,18 +230,11 @@
 .technology {
     background-image: linear-gradient(to bottom, #3f5c82, #7cdedc);
     padding-bottom: 80px;
-    border-radius: 100%/250px;
     position: relative;
 }
-.technology:after {
-    background-image: url(../../images/index-bg-02.png);
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 395px;
-    content: '';
-    position: absolute;
-    bottom: 120px;
-    opacity: 0.5;
+
+.technology:before {
+    border-bottom: 20px solid #3f5c82;
 }
 
 /*4.首页核心能力*/
@@ -232,11 +246,11 @@
 .ability .dialog-box {
     background: transparent;
     box-shadow: none;
-    padding:20px;
+    padding: 20px;
     height: 400px;
 }
 
-.ability .dialog-box img{
+.ability .dialog-box img {
     width: 164px;
 }
 
@@ -261,10 +275,27 @@
     font-size: 14px;
 }
 
+.col-5 {
+    width: 100%;
+    float: left;
+}
+
 /*5.首页产品与服务*/
 .productServive {
-    background:#3b5a8f;
-    border-radius: 100px 100px 0 0;
+    background: #3b5a8f;
+    position: relative;
+}
+
+.productServive:before {
+    border-bottom: 20px solid #3b5a8f;
+}
+
+.productServive .dialog-box {
+    height: 450px;
+}
+
+.productServive .dialog-box-header {
+    border-bottom: 1px solid #3b5a8f;
 }
 
 .productServive .dialog-box-header img,
@@ -274,12 +305,9 @@
     height: 80px
 }
 
-.productServive .dialog-box {
-    height: 600px;
-}
-
 .productServive .dialog-box-content {
-    min-height: 220px;
+    min-height: 145px;
+    padding: 20px;
 }
 
 .productServive .more {
@@ -304,6 +332,7 @@
 
 .company {
     padding-top: 20px;
+    position: relative;
 }
 
 .company:after {
@@ -324,7 +353,9 @@
 .company>li .logo {
     display: block;
     width: 200px;
-    margin-top: 40px;
+    position: absolute;
+    top: 30px;
+    right: 0;
 }
 
 .company-header {
@@ -340,7 +371,7 @@
     font-family: "lanting";
 }
 
-.company-con .icon{
+.company-con .icon {
     margin-right: 5px;
 }
 
@@ -446,29 +477,19 @@ a.company-con:hover {
     margin-right: 10px;
 }
 
-.tvm-01 {
-    background-image: url(../../images/TVMbg01.jpg);
-}
-
-.tvm-02,.atp-02 {
+.tvm-02,
+.atp-02 {
     background-color: #f4f6fb;
     position: relative;
 }
 
-.tvm-02:before,.atp-02:before {
-    content: '';
-    width: 0;
-    height: 0;
-    border-right: 20px solid transparent;
+.tvm-02:before,
+.atp-02:before {
     border-bottom: 20px solid #f4f6fb;
-    border-left: 20px solid transparent;
-    position: absolute;
-    left: 50%;
-    top: 0%;
-    margin-top: -20px;
 }
 
-.tvm-02:after,.atp-02:after {
+.tvm-02:after,
+.atp-02:after {
     content: '';
     width: 130px;
     height: 194px;
@@ -479,27 +500,20 @@ a.company-con:hover {
     background-image: url(../../images/middle01.png);
 }
 
-.atp-02:after{
+.atp-02:after {
     width: 125px;
     background-image: url(../../images/middle02.png);
 }
 
-.tvm-03,.atp-03 {
+.tvm-03,
+.atp-03 {
     background-image: linear-gradient(to right, #45b2cd, #276ebf);
     position: relative;
 }
 
-.tvm-03:before,.atp-03:before {
-    content: '';
-    width: 0;
-    height: 0;
+.tvm-03:before,
+.atp-03:before {
     border-bottom: 20px solid #3287c4;
-    border-right: 20px solid transparent;
-    border-left: 20px solid transparent;
-    position: absolute;
-    left: 50%;
-    top: 0%;
-    margin-top: -20px;
 }
 
 
@@ -522,18 +536,6 @@ a.company-con:hover {
 .atp-01 {
     background-image: url(../../images/ATPbg01.jpg);
 }
-
-/* .atp-02 {
-    background-image: url(../../images/ATPbg02.jpg);
-} */
-
-.atp-02 .dialog {
-    padding: 151px 0;
-}
-
-/* .atp-03 {
-    background-image: url(../../images/ATPbg03.jpg);
-} */
 
 .service-01 {
     background-image: url(../../images/SERVICEbg01.jpg);
@@ -631,6 +633,27 @@ a.company-con:hover {
 }
 
 /*媒体查询*/
+@media screen and (max-width:768px) {
+    .company li {
+        width: 100%;
+        text-align: center
+    }
+
+    .companyli .con {
+        margin-right: 0;
+    }
+
+    .company>li:not(:first-child) {
+        margin-left: 0;
+    }
+
+    .company li .logo {
+        top: 0;
+        margin: 20px auto;
+        position: static;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .header-navbar .logo {
         background-size: 80%;
@@ -660,8 +683,15 @@ a.company-con:hover {
         bottom: 20px;
     }
 
-    .carousel, .block img{
-        margin-top:0;
+    .carousel,
+    .block img {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .company>li .logo {
+        top: 150px
     }
 }
 
@@ -745,18 +775,35 @@ a.company-con:hover {
         width: 50%;
     }
 
-    .tvm-02:after,.atp-02:after{
+    .tvm-02:after,
+    .atp-02:after {
         display: block;
     }
 
-    
+
     .insightCloud {
         background-image: url(../../images/index-bg-01.png);
+    }
+
+    .col-5 {
+        width: 50%
     }
 }
 
 @media screen and (min-width: 1200px) {
     .header-navbar .logo {
         background-size: 100%;
+    }
+
+    .col-5 {
+        width: 20%
+    }
+
+    .down-1 {
+        transform: translateY(20px)
+    }
+
+    .down-2 {
+        transform: translateY(40px)
     }
 }

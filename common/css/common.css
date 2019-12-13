@@ -27,6 +27,11 @@
     display: inline-flex;
 }
 
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /*自定义公共样式*/
 /*1.所有标签样式*/
 @font-face {
@@ -50,7 +55,7 @@
 }
 
 * {
-    font-family: "lantingzhong";
+    font-family: "Microsoft YaHei";
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
@@ -66,7 +71,7 @@ li {
 }
 
 .my-container {
-    max-width: 1600px;
+    max-width: 1222px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -101,7 +106,7 @@ a:focus {
 
 .banner-title,
 .banner-subtitle {
-    font-family: "lantingcu";
+    font-family: "SimHei";
 }
 
 .banner-left {
@@ -110,7 +115,7 @@ a:focus {
 }
 
 .banner-right {
-    text-align: right;
+    text-align: left;
     margin-right: 15%;
 }
 
@@ -120,12 +125,17 @@ a:focus {
 
 /*4.dialog*/
 .dialog {
-    padding: 150px 0;
+    padding: 100px 0 150px;
 }
 
 .dialog li:hover {
     transform: translateY(-8px);
     cursor: pointer;
+}
+
+.insightCloud .dialog li:hover {
+    transform: translateY(0);
+    cursor: inherit;
 }
 
 .dialog-header {
@@ -134,13 +144,11 @@ a:focus {
 }
 
 .dialog-title {
-    font-size: 48px;
-    font-family: "lantingcu";
+    font-size: 24px;
 }
 
 .dialog-con {
-    font-size: 24px;
-    font-family: "lantingzhong";
+    font-size: 16px;
 }
 
 .dialog-list {
@@ -151,8 +159,8 @@ a:focus {
 .dialog-box {
     background-color: rgba(255, 255, 255, .7);
     border-radius: 5px;
-    padding: 45px;
-    height: 480px;
+    padding: 15px 10px;
+    height: 400px;
     box-shadow: 0 0 15px 5px rgba(202, 203, 204, 0.3);
     margin: 10px 0;
     color: #3B537C;
@@ -160,9 +168,7 @@ a:focus {
 
 .dialog-box-header {
     text-align: center;
-    font-family: "Microsoft YaHei";
     padding: 10px;
-    border-bottom: 1px solid #0B0E10;
 }
 
 .dialog-box-header img {
@@ -171,7 +177,7 @@ a:focus {
 }
 
 .dialog-box-title {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .dialog-box-subtitle {
@@ -179,8 +185,7 @@ a:focus {
 }
 
 .dialog-box-content {
-    font-size: 20px;
-    padding-top: 35px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -201,6 +206,10 @@ a:focus {
     width: 100%;
 }
 
+.block .carousel-caption{
+    padding-top: 71px;
+}
+
 .product-middle,
 .service-middle {
     position: absolute;
@@ -211,24 +220,19 @@ a:focus {
 .product-abstract {
     text-align: left;
     text-indent: 37px;
-    margin: 30px 90px 0;
     padding: 25px 50px;
-    font-size: 20px;
-    font-family: "lanting";
+    font-size: 16px;
+    font-family: 'Microsoft YaHei';
     line-height: 2;
     color: #ffffff;
-    background-image: linear-gradient(to bottom left, #44AECC, #205FBC);
+    background-image: linear-gradient(to bottom left, #44AECC, #205FBC); 
+    border-radius: 10px 10px 0 0;
+    margin: 0;
 }
 
 .product-abstract1 {
-    text-align: left;
-    text-indent: 37px;
-    margin: 13px 90px 0;
-    padding: 45px 0 40px;
-    font-size: 20px;
-    font-family: "lantingcu";
-    line-height: 2;
     color: #5E5E5E;
+    background: none;
 }
 
 .product-abstract2 {
@@ -245,9 +249,9 @@ a:focus {
 }
 
 .product-image {
-    margin: 0 90px;
-    display: block;
-    box-shadow: 25px 25px 15px 0px rgba(202, 203, 204, 0.3)
+    padding:5px;
+    background-color:#f4f6fb;
+    border-radius: 0 0 10px 10px;
 }
 
 .product-image img {
@@ -255,11 +259,9 @@ a:focus {
 }
 
 .product-02 .dialog-header {
-    width: 450px;
-    background-image: linear-gradient(to right, #EA2C32, #0F5093);
-    margin: 0 auto 100px;
     padding: 25px 32px;
-    border-radius: 500px;
+    text-align: center;
+    color:#1b1b1b;
 }
 
 .product-02 .dialog-box {
@@ -284,11 +286,7 @@ a:focus {
 }
 
 .product-02 .dialog-list {
-    margin: 0;
-}
-
-.product-03 .dialog {
-    padding: 0 0 32px;
+    margin: 55px 0 60px;
 }
 
 .product-03 .dialog-list {
@@ -337,7 +335,7 @@ a:focus {
 
     /*40%*/
     .banner-title {
-        font-size: 48px;
+        font-size: 20px;
         line-height: 48px;
     }
 
@@ -346,16 +344,21 @@ a:focus {
     }
 
     .banner-subtitle {
-        font-size: 29px;
+        font-size: 12px;
     }
 
     .banner-text {
-        font-size: 12px;
+        font-size: 7px;
     }
 
     .banner-left {
         text-align: center;
         margin: 0 auto;
+    }
+
+    .my-container{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -363,15 +366,20 @@ a:focus {
 
     /*50%*/
     .banner-title {
-        font-size: 60px;
+        font-size: 25px;
     }
 
     .banner-subtitle {
-        font-size: 36px;
+        font-size: 15px;
     }
 
     .banner-text {
-        font-size: 15px;
+        font-size: 9px;
+    }
+
+    
+    .block .carousel-caption{
+        padding-top: 0;
     }
 }
 
@@ -379,25 +387,17 @@ a:focus {
 
     /*75%*/
     .banner-title {
-        font-size: 90px;
+        font-size: 37px;
     }
 
     .banner-subtitle {
-        font-size: 54px;
-    }
-
-    .banner-text {
         font-size: 22px;
     }
 
-    .product-02 .dialog-header {
-        width: 700px;
-        padding: 25px 100px;
+    .banner-text {
+        font-size: 13px;
     }
 
-    .product-02 .dialog-box {
-        height: 470px;
-    }
     .dialog-box-header img {
         width: 100%;
     }
@@ -405,15 +405,15 @@ a:focus {
 
 @media screen and (min-width: 1200px) {
     .banner-title {
-        font-size: 120px;
+        font-size: 50px;
     }
 
     .banner-subtitle {
-        font-size: 72px;
+        font-size: 30px;
     }
 
     .banner-text {
-        font-size: 30px;
+        font-size: 18px;
     }
 
     .service-image {
