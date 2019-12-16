@@ -424,27 +424,19 @@ a.company-con:hover {
     z-index: 999;
 }
 
-.connect-header{
-    margin:25px 0;
+.connect-header {
+    margin: 25px 0;
     text-align: center;
 }
 
-.connect-header-en{
+.connect-header-en {
     font-size: 24px;
 }
 
-.connect-header-ch{
+.connect-header-ch {
     font-size: 19px;
-    border-top:5px solid #64b2f6;
+    border-top: 5px solid #64b2f6;
     display: inline-block;
-}
-
-.connect-img{
-    padding:40px;
-    text-align: center;
-}
-.connect-img img{
-    width:80%;
 }
 
 .connect {
@@ -464,6 +456,16 @@ a.company-con:hover {
 
 .connect img {
     width: 100%;
+    height: 100%;
+}
+
+.connect-img {
+    padding: 40px;
+    text-align: center;
+}
+
+.connect-img img {
+    width: 80%;
 }
 
 .connect-title {
@@ -475,12 +477,12 @@ a.company-con:hover {
     margin-right: 10px;
 }
 
-.connect-con{
+.connect-con {
     font-size: 16px;
     line-height: 2;
 }
 
-.connect-con div{
+.connect-con div {
     margin-top: 40px;
 }
 
@@ -489,8 +491,8 @@ a.company-con:hover {
     background-image: url(../../images/middle02.png);
 }
 
-.service-banner .banner-content{
-    color:#222222;
+.service-banner .banner-content {
+    color: #222222;
 }
 
 .pts-02:after {
@@ -500,7 +502,9 @@ a.company-con:hover {
     height: 161px;
 }
 
-.service-02 .dialog,.service-03 .dialog,.search-01 .dialog{
+.service-02 .dialog,
+.service-03 .dialog,
+.search-01 .dialog {
     padding-top: 65px;
 }
 
@@ -513,7 +517,8 @@ a.company-con:hover {
     padding-bottom: 85px;
 }
 
-.service-03 .service-title,.service-03 .service-subtitle {
+.service-03 .service-title,
+.service-03 .service-subtitle {
     color: #ffffff;
 }
 
@@ -533,11 +538,11 @@ a.company-con:hover {
     cursor: inherit;
 }
 
-.search-01 .dialog-list{
-    margin:75px 0;
+.search-01 .dialog-list {
+    margin: 75px 0;
 }
 
-.search-01 .dialog{
+.search-01 .dialog {
     padding-bottom: 45px;
 }
 
@@ -730,15 +735,15 @@ a.company-con:hover {
         width: 50%
     }
 
-    .connect-img img{
-        width:100%;
+    .connect-img img {
+        width: 100%;
     }
 
-    .connect-header-en{
+    .connect-header-en {
         font-size: 30px;
     }
-    
-    .connect-header-ch{
+
+    .connect-header-ch {
         font-size: 24px;
     }
 }
