@@ -76,25 +76,6 @@
 
 /*自定义公共样式*/
 /*1.所有标签样式*/
-@font-face {
-    font-family: 'fangzheng';
-    src: url(../../library/fonts/fangzheng.TTF);
-}
-
-@font-face {
-    font-family: 'lanting';
-    src: url(../../library/fonts/lanting.TTF);
-}
-
-@font-face {
-    font-family: 'lantingcu';
-    src: url(../../library/fonts/lantingcu.TTF);
-}
-
-@font-face {
-    font-family: 'lantingzhong';
-    src: url(../../library/fonts/lantingzhong.TTF);
-}
 
 * {
     font-family: "Microsoft YaHei";
