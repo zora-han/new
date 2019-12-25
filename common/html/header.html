@@ -1,17 +1,21 @@
 <nav id="mainNav" class="navbar navbar-fixed-top header-navbar">
-    <div class="container-fluid my-container">
-        <!--logo-->
-        <a href="index.html" class="logo"></a>
-        <!--折叠菜单按钮-->
-        <div id="oiBtn" class="oi navbar-toggle collapsed"  data-toggle="collapse" data-target="#navBox" aria-expanded="false" onclick="toggleForPhone()">
-            <em></em>
+    <div class="container-fluid header-container">
+        <div class="navbar-header header-container-01">
+            <!--logo-->
+            <a href="index.html" class="logo"></a>
+            <!--折叠菜单按钮-->
+            <div id="oiBtn" class="oi navbar-toggle collapsed" data-toggle="collapse" data-target="#navBox"
+                aria-expanded="false" onclick="toggleForPhone()">
+                <em></em>
+            </div>
         </div>
+
         <!--菜单列表-->
-        <ul id="navBox" class="nav navbar-nav navbar-right collapse navbar-collapse">
-            <li class="navbox-li">
+        <ul id="navBox" class="nav navbar-nav collapse navbar-collapse header-container-02">
+            <li>
                 <a class="active" href="index.html" id='index'>首页</a>
             </li>
-            <li class="dropdown navbox-li">
+            <li class="dropdown">
                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" id='product'>
                     产品
                     <b class="caret"></b>
@@ -21,44 +25,52 @@
                     <img src="images/menu-arrow.png" class="menu-arrow">
                     <li>
                         <a href="product-security-TVM.html">
-                            <img src="../../images/ps-01.png" class="pic">
+                            <div class="header-icon">
+                                <span class='icon iconfont iconloudongguanli'></span>
+                            </div>
                             <div class="con">
-                                <div class="up">HUAUN TVM</div>
+                                <div class="up">Huaun-TVM</div>
                                 <div class="down">自适应网络安全威胁与漏洞管理平台</div>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href="product-security-PTS.html">
-                            <img src="../../images/ps-02.png" class="pic">
+                            <div class="header-icon">
+                                <span class='icon iconfont iconWebshentouceshifuwu'></span>
+                            </div>
                             <div class="con">
-                                <div class="up">HUAUN PTS</div>
+                                <div class="up">Huaun-PTS</div>
                                 <div class="down">网络安全自动化攻防渗透系统</div>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href="product-security-ATP.html">
-                            <img src="../../images/ps-03.png" class="pic">
+                            <div class="header-icon">
+                                <span class='icon iconfont iconwangluojieru'></span>
+                            </div>
                             <div class="con">
-                                <div class="up">HUAUN ATP</div>
-                                <div class="down">第五代自适应互联网反溯源系统</div>
+                                <div class="up">Huaun-ATP</div>
+                                <div class="down">第五代自适应网络安全接入系统</div>
                             </div>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="navbox-li">
+            <li>
                 <a href="service.html" id='service'>服务</a>
             </li>
-            <li class="navbox-li">
+            <li>
                 <a href="research-institute.html" id='research'>安全研究</a>
             </li>
-            <li class="dropdown navbox-li">
+            <li>
                 <a href="about-us-page.html" id='about'>
                     关于我们
                 </a>
             </li>
         </ul>
+
+        <button class="header-container-03"><a href="https://exmail.qq.com/login">企业邮箱<i class="icon iconfont iconyouxiang" style="margin-left: 8px;"></i></a></button>
     </div>
 </nav>

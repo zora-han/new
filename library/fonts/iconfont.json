@@ -27,6 +27,48 @@
       "unicode_decimal": 58992
     },
     {
+      "icon_id": "2649225",
+      "name": "漏洞管理1",
+      "font_class": "loudongguanli",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "3150254",
+      "name": "服务",
+      "font_class": "fuwu1",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "3154566",
+      "name": "Web渗透测试服务",
+      "font_class": "Webshentouceshifuwu",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "3876827",
+      "name": "11 人工智能",
+      "font_class": "rengongzhineng",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "6110240",
+      "name": "市场-安全服务",
+      "font_class": "shichang-anquanfuwu",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "6891814",
+      "name": "钓鱼网站检测.全球恶意URL分布",
+      "font_class": "wangluojieru",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
       "icon_id": "6966956",
       "name": "右箭头",
       "font_class": "youjiantou",
@@ -39,6 +81,188 @@
       "font_class": "zuojiantou",
       "unicode": "e63b",
       "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "10345169",
+      "name": "威胁情报",
+      "font_class": "weixieqingbao",
+      "unicode": "e765",
+      "unicode_decimal": 59237
+    },
+    {
+      "icon_id": "10467880",
+      "name": "知识图谱",
+      "font_class": "zhishitupu",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "11761256",
+      "name": "物联网",
+      "font_class": "wulianwang",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "12297825",
+      "name": "安全攻防演练服务",
+      "font_class": "anquangongfangyanlianfuwu",
+      "unicode": "ed57",
+      "unicode_decimal": 60759
+    },
+    {
+      "icon_id": "12442588",
+      "name": "ico_模型训练",
+      "font_class": "ico_moxingxunlian",
+      "unicode": "e745",
+      "unicode_decimal": 59205
+    },
+    {
+      "icon_id": "12442589",
+      "name": "ico_软件集成",
+      "font_class": "ico_ruanjianjicheng",
+      "unicode": "e746",
+      "unicode_decimal": 59206
+    },
+    {
+      "icon_id": "12442590",
+      "name": "ico_随机跳变",
+      "font_class": "ico_suijitiaobian",
+      "unicode": "e747",
+      "unicode_decimal": 59207
+    },
+    {
+      "icon_id": "12442591",
+      "name": "ico_编码",
+      "font_class": "ico_bianma",
+      "unicode": "e748",
+      "unicode_decimal": 59208
+    },
+    {
+      "icon_id": "12442592",
+      "name": "ico_异构多隧道",
+      "font_class": "ico_yigouduosuidao",
+      "unicode": "e749",
+      "unicode_decimal": 59209
+    },
+    {
+      "icon_id": "12442593",
+      "name": "ico_互联网资产",
+      "font_class": "ico_hulianwangzichan",
+      "unicode": "e74a",
+      "unicode_decimal": 59210
+    },
+    {
+      "icon_id": "12442594",
+      "name": "ico_反制",
+      "font_class": "ico_fanzhi",
+      "unicode": "e74b",
+      "unicode_decimal": 59211
+    },
+    {
+      "icon_id": "12442595",
+      "name": "ico_POC",
+      "font_class": "ico_POC",
+      "unicode": "e74c",
+      "unicode_decimal": 59212
+    },
+    {
+      "icon_id": "12442596",
+      "name": "ico_红队服务",
+      "font_class": "ico_hongduifuwu",
+      "unicode": "e74d",
+      "unicode_decimal": 59213
+    },
+    {
+      "icon_id": "12442597",
+      "name": "ico_通道控制",
+      "font_class": "ico_tongdaokongzhi",
+      "unicode": "e74e",
+      "unicode_decimal": 59214
+    },
+    {
+      "icon_id": "12442598",
+      "name": "ico_共享",
+      "font_class": "ico_gongxiang",
+      "unicode": "e74f",
+      "unicode_decimal": 59215
+    },
+    {
+      "icon_id": "12442599",
+      "name": "ico_安全研究",
+      "font_class": "ico_anquanyanjiu",
+      "unicode": "e750",
+      "unicode_decimal": 59216
+    },
+    {
+      "icon_id": "12470342",
+      "name": "ico2_产品平台化",
+      "font_class": "ico_chanpinpingtaihua",
+      "unicode": "e751",
+      "unicode_decimal": 59217
+    },
+    {
+      "icon_id": "12470343",
+      "name": "ico2_安全自动化",
+      "font_class": "ico_anquanzidonghua",
+      "unicode": "e752",
+      "unicode_decimal": 59218
+    },
+    {
+      "icon_id": "12470344",
+      "name": "ico2_安全防御",
+      "font_class": "ico_anquanfangyu",
+      "unicode": "e753",
+      "unicode_decimal": 59219
+    },
+    {
+      "icon_id": "12470436",
+      "name": "ico2_威胁情报",
+      "font_class": "ico_weixieqingbao",
+      "unicode": "e755",
+      "unicode_decimal": 59221
+    },
+    {
+      "icon_id": "12470437",
+      "name": "ico2_特定目标智能识别",
+      "font_class": "ico_tedingmubiaozhinengshibie",
+      "unicode": "e756",
+      "unicode_decimal": 59222
+    },
+    {
+      "icon_id": "12470438",
+      "name": "ico2_系统运维",
+      "font_class": "ico_xitongyunwei",
+      "unicode": "e757",
+      "unicode_decimal": 59223
+    },
+    {
+      "icon_id": "12470439",
+      "name": "ico2_能力服务化",
+      "font_class": "ico_nenglifuwuhua",
+      "unicode": "e758",
+      "unicode_decimal": 59224
+    },
+    {
+      "icon_id": "12470440",
+      "name": "ico2_重保支撑",
+      "font_class": "ico_zhongbaozhicheng",
+      "unicode": "e759",
+      "unicode_decimal": 59225
+    },
+    {
+      "icon_id": "12470441",
+      "name": "ico2_应急支撑",
+      "font_class": "ico_yingjizhicheng",
+      "unicode": "e75a",
+      "unicode_decimal": 59226
+    },
+    {
+      "icon_id": "12475878",
+      "name": "ico2 [已恢复]_红蓝对抗",
+      "font_class": "honglanduikang",
+      "unicode": "e754",
+      "unicode_decimal": 59220
     }
   ]
 }

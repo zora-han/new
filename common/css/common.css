@@ -82,7 +82,7 @@
 /*1.所有标签样式*/
 
 * {
-    font-family: "Microsoft YaHei";
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
@@ -98,7 +98,7 @@ li {
 }
 
 .my-container {
-    max-width: 1222px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -136,10 +136,11 @@ a:focus {
     line-height: 1.5;
 }
 
-.banner-title,
+/* .banner-title,
 .banner-subtitle {
+    font-family: "SimSun";
     font-family: "SimHei";
-}
+} */
 
 .banner-left {
     text-align: left;
@@ -147,7 +148,7 @@ a:focus {
 }
 
 .banner-right {
-    text-align: left;
+    text-align: right;
     margin-right: 15%;
 }
 
@@ -205,7 +206,7 @@ a:focus {
 
 .dialog-box-header img {
     margin-bottom: 15px;
-    width: 80%;
+    width: 65%;
 }
 
 .dialog-box-title {
@@ -256,10 +257,9 @@ a:focus {
 
 .product-abstract {
     text-align: left;
-    text-indent: 37px;
     padding: 25px 50px;
     font-size: 16px;
-    font-family: 'Microsoft YaHei';
+    /* font-family: 'Microsoft YaHei'; */
     line-height: 2;
     color: #ffffff;
     background-image: linear-gradient(to bottom left, #44AECC, #205FBC);
@@ -280,6 +280,7 @@ a:focus {
     padding: 5px;
     background-color: #f4f6fb;
     border-radius: 0 0 10px 10px;
+    text-align: center;
 }
 
 .product-image img {
@@ -344,6 +345,18 @@ a:focus {
     background-color: #fff;
     width: 164px;
     border-radius: 50%;
+    font-size: 100px;
+}
+
+.product-02 .dialog-box-header .icon {
+    background-color: #fff;
+    width: 164px;
+    border-radius: 50%;
+    font-size: 90px;
+    display: block;
+    height: 164px;
+    padding-top: 17px;
+    margin: 0 auto 15px;
 }
 
 .product-02 .dialog-box-content {
@@ -451,6 +464,10 @@ a:focus {
     .product-03:before,
     .service-03:before {
         border-bottom: 10px solid #3287c4;
+    }
+
+    .banner-right {
+        text-align: center;
     }
 }
 

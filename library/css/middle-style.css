@@ -46,7 +46,6 @@ html{
 }
 
 .pageBlock p {
-    font-family: Roboto,Roboto-local,sans-serif;
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.75rem;
@@ -141,7 +140,6 @@ html{
 .productWheel__outer textPath.textCurve {
     text-transform: uppercase;
     fill: #5d6d75;
-    font-family: Muli,Muli-local,sans-serif;
     font-weight: 800;
     font-size: 2rem
 }
@@ -149,6 +147,7 @@ html{
 .productWheel img {
     display: block;
     margin:50px auto;
+    width: 85%;
 }
 
 .productWheel__center {
@@ -173,18 +172,18 @@ html{
 
 .productWheel__center p {
     color: #606b70;
-    font-family: Muli,Muli-local,sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 17px;
     position: relative;
-    top: 35%;
+    top: 38%;
     font-size: 19px;
 }
 
 .bgBlueGreenRadialGradient {
-    background: #1cbb98;
-    background: radial-gradient(ellipse at center,#1cbb98 0,#255675 100%);
+    /* background: #1cbb98; */
+    /* background: radial-gradient(ellipse at center,#1cbb98 0,#255675 100%); */
+    /* background: radial-gradient(ellipse at center, #7cdedc 0, #3f5c82 100%); */
 }
 
 .productWheel__gradient {
@@ -202,7 +201,8 @@ html{
 .productWheel .slice {
     position: absolute;
     background-size: contain;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .productWheel__initial {
@@ -247,13 +247,11 @@ html{
 .productWheel__initial .sliceText.title {
     font-weight: 800;
     text-transform: uppercase;
-    font-family: Muli,Muli-local,sans-serif;
     font-size: 36px
 }
 
 .productWheel__initial .sliceText.subtitle {
-    font-size: 30px;
-    font-family: Roboto,Roboto-local,sans-serif
+    font-size: 28px;
 }
 
 .productWheel__active {
@@ -268,7 +266,6 @@ html{
 .productWheel__active .sliceText {
     fill: #5d6d75;
     font-size: 25px;
-    font-family: Roboto,Roboto-local,sans-serif
 }
 
 .productWheel__active .sliceTitle {
@@ -336,7 +333,6 @@ html{
     text-anchor: middle;
     fill: #fff;
     stroke: none;
-    font-family: Muli,Muli-local,sans-serif;
     font-weight: 800;
     letter-spacing: 1px
 }
@@ -722,7 +718,6 @@ html{
 }
 
 .pageBlock h2 {
-    font-family: Muli,Muli-local,sans-serif;
     font-weight: 900;
     font-size: 1.5rem;
     line-height: 1.1;

@@ -39,7 +39,6 @@
 .header-navbar .nav>li>a {
     color: #ffffff;
     font-size: 16px;
-    font-family: "Microsoft YaHei";
     margin-left: 35px;
 }
 
@@ -53,6 +52,17 @@
     border-bottom: 1px solid #ffffff;
 }
 
+.header-container-03 {
+    background: none;
+    border: none;
+    padding-bottom: 5px;
+}
+
+.header-container-03 a{
+    color: #fff;
+    font-size: 16px;
+}
+
 .header-navbar ul.in {
     width: 100%;
     position: absolute;
@@ -60,7 +70,7 @@
     background: rgba(255, 255, 255, .9);
     z-index: -1;
     margin: 0;
-    padding-top: 61px;
+    padding-top: 51px;
     max-height: 100vh;
     height: 100vh;
     overflow: hidden;
@@ -88,6 +98,10 @@
     border-bottom: 1px solid #d6d6d6;
 }
 
+.scrolled .header-container-03 a{
+    color: #666666;
+}
+
 .header-navbar ul.in img,
 .header-navbar ul.in .down {
     display: none;
@@ -106,12 +120,17 @@
     color: #379ee4;
 }
 
+.header-container-02 ul li a{
+    display: flex;
+    flex-direction: row;
+}
+
 .oi {
     width: 30px;
     height: 30px;
     position: absolute;
     right: 12px;
-    top: 3px;
+    top: 0;
 }
 
 .oi em {
@@ -194,7 +213,7 @@
 
 .carousel,
 .block img {
-    margin-top: 61px;
+    margin-top: 51px;
 }
 
 /*2.首页圆盘左边文字*/
@@ -205,15 +224,29 @@
     background-position: 50%;
 }
 
-.insightCloud .left-box h2,
-.insightCloud .left-box li {
-    font-family: "Microsoft YaHei";
-    font-weight: 600;
+.insightCloud .left-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.insightCloud .left-box .left-box-img {
+    background-color: #2A93D5;
+    border-radius: 50%;
+    padding: 10px 25px;
+    margin: 0 15px;
+    margin-right: 20px;
+}
+
+.insightCloud .left-box .left-box-img .icon {
+    font-size: 64px;    
+    color: #ffffff;
 }
 
 .insightCloud .left-box h2 {
     font-size: 24px;
-    margin: 40px 0 20px;
+    margin: 10px 0;
 }
 
 .insightCloud .left-box li {
@@ -247,6 +280,25 @@
 
 .ability .dialog-box img {
     width: 164px;
+}
+
+.ability .dialog-box .ability-icon {
+    border-radius: 50%;
+    padding: 4px;
+    border: 1px solid #66ceea;
+    width: 164px;
+    height: 164px;
+    margin: 0 auto 15px;
+}
+
+.ability .dialog-box .icon {
+    font-size: 100px;
+    background-color: #66ceea;
+    border-radius: 50%;
+    color: #fff;
+    height: 100%;
+    display: block;
+    padding-top: 5px;
 }
 
 .ability .dialog-box-header {
@@ -314,6 +366,20 @@
     text-decoration: none;
 }
 
+.productServive-icon .icon,.header-icon .icon{
+    font-size: 80px;
+    color: #02457A;
+}
+
+.header-icon .icon{
+    font-size: 40px;
+}
+
+
+.header-icon{
+    display: inline-block;
+}
+
 /*6.页底*/
 .information {
     background-color: #242B2E;
@@ -342,23 +408,21 @@
 
 .company>li .logo {
     display: block;
-    width: 200px;
+    width: 160px;
     position: absolute;
     top: 30px;
-    right: 0;
+    right: 20px;
 }
 
 .company-header {
     color: #83959F;
-    font-family: "lanting";
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .company-con {
     display: block;
-    font-size: 18px;
+    font-size: 14px;
     color: #ffffff;
-    font-family: "lanting";
 }
 
 .company-con .icon {
@@ -375,10 +439,9 @@ a.company-con:hover {
 
 .footer {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     padding: 20px 0 10px;
-    font-family: "lanting";
 }
 
 
@@ -441,8 +504,7 @@ a.company-con:hover {
 
 .connect {
     border-radius: 20px;
-    background: #FFFFFF;
-    height: 230px;
+    background: #FFFFFF;a
     width: 95%;
     margin: 0 auto 65px;
     padding: 30px;
@@ -470,7 +532,7 @@ a.company-con:hover {
 
 .connect-title {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .connect-content i {
@@ -480,10 +542,37 @@ a.company-con:hover {
 .connect-con {
     font-size: 16px;
     line-height: 2;
+    padding-top: 40px;
 }
 
 .connect-con div {
     margin-top: 40px;
+}
+
+.address{
+    padding: 15px;
+    margin: 0 auto 65px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    width: 95%;
+}
+
+.address img{
+    width: 100%;
+}
+
+.tvm-01 .product-image {
+    background-color: transparent;
+}
+
+.tvm-01 .product-image img {
+    width: 80%;
+}
+
+.tvm-01 .my-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .atp-02:after {
@@ -533,6 +622,10 @@ a.company-con:hover {
     margin-left: 18px;
 }
 
+.service-03 .con ul ul li {
+    list-style-image:url(../../images/tag.svg);
+}
+
 .service-03 .dialog li:hover {
     transform: translateY(0);
     cursor: inherit;
@@ -563,14 +656,12 @@ a.company-con:hover {
     background: #FFFFFF;
     border-radius: 20px;
     padding: 20px;
-    font-family: 'lantingzhong'
 }
 
 .intro-text {
     position: absolute;
     bottom: 130px;
     width: 100%;
-    font-family: 'lanting';
     font-size: 18px;
     left: 40px;
     line-height: 1.5;
@@ -583,6 +674,21 @@ a.company-con:hover {
 .intro-image image {
     width: 100%;
 }
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .iconhonglanduikang {
+        background: -webkit-gradient(linear, left bottom, right bottom, from(#69D1E9), to(#C20D23));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+} */
+
 
 /*媒体查询*/
 @media screen and (max-width:768px) {
@@ -604,12 +710,22 @@ a.company-con:hover {
         margin: 20px auto;
         position: static;
     }
+
+    .header-container {
+        display: block;
+        padding: 5px 30px;
+    }
+
+    .header-container-03 {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .header-navbar .logo {
         background-size: 80%;
         height: 45px;
+        margin-top: 5px;
     }
 
     .header-navbar {
@@ -639,11 +755,20 @@ a.company-con:hover {
     .block img {
         margin-top: 0;
     }
+
+    .dropdown-menu>li>a .con {
+        padding-left: 20px;
+        padding-top: 8px;
+    }
+
+    .text-connect{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 992px) {
     .company>li .logo {
-        top: 150px
+        top: 180px
     }
 }
 
@@ -665,14 +790,14 @@ a.company-con:hover {
     }
 
     .dropdown-menu>li {
-        width: 410px;
+        width: 335px;
         border-bottom: 1px solid #eaeaea;
         position: relative;
     }
 
     .dropdown-menu>li>a {
         overflow: hidden;
-        padding: 30px 20px;
+        padding: 0px 20px;
         border-left: 8px solid #fff;
         white-space: normal;
         position: relative;
@@ -693,14 +818,10 @@ a.company-con:hover {
         z-index: 2;
     }
 
-    .dropdown-menu>li>a .con {
-        padding-left: 100px;
-    }
-
     .navbar-nav>li>.dropdown-menu .menu-arrow {
         position: absolute;
         top: -12px;
-        right: 20px;
+        left: 70px;
     }
 
     .dropdown-menu.small-menu>li {
@@ -735,8 +856,12 @@ a.company-con:hover {
         width: 50%
     }
 
+    .connect-img {
+        padding-top: 90px;
+    }
+
     .connect-img img {
-        width: 100%;
+        width: 85%;
     }
 
     .connect-header-en {
@@ -757,11 +882,15 @@ a.company-con:hover {
         width: 20%
     }
 
-    .down-1 {
-        transform: translateY(20px)
+    .connect-img {
+        padding-top: 20px;
     }
 
-    .down-2 {
-        transform: translateY(40px)
+    .company>li .logo {
+        right: 80px;
+    }
+
+    .company {
+        padding-left: 80px;
     }
 }
